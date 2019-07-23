@@ -11,4 +11,6 @@ soup = BeautifulSoup(page.content, 'html.paser')
 
 title = soup.find(id="productTitle").get_text()
 
-print(title)
+price = soup.find(id="priceblock_ourprice") 
+
+#print(title)
